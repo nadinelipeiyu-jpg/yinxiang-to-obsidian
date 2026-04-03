@@ -1,6 +1,6 @@
 # evernote-to-obsidian
 
-印象筆記（Yinxiang/Evernote）本機資料庫 → Obsidian Markdown 轉換工具
+將中國版本的印象筆記（Yinxiang）本機資料庫 → Obsidian Markdown 轉換工具
 
 ## 功能
 

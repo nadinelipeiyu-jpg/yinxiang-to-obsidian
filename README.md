@@ -32,6 +32,33 @@
 pip3 install html2text
 ```
 
+## 前置確認：找到印象筆記的本機資料庫位置
+
+在設定腳本之前，請先確認印象筆記的資料確實存在於本機。
+
+### 方法一：使用磁碟工具（推薦）
+
+1. 開啟 **Finder** → 前往 → 前往檔案夾（或按 `Cmd + Shift + G`）
+2. 輸入以下路徑：
+   ```
+   ~/Library/Application Support/com.yinxiang.Mac
+   ```
+3. 確認資料夾存在，且裡面有 `accounts/` 目錄
+4. 進入 `accounts/app.yinxiang.com/`，你會看到一個數字 ID 的資料夾（這就是你的 USER_ID）
+5. 確認該資料夾內有 `localNoteStore/LocalNoteStore.sqlite` 這個檔案
+
+> 如果找不到這個路徑，代表印象筆記尚未在本機建立資料庫。請先打開印象筆記 App，登入後等待同步完成。
+
+### 方法二：用 Terminal 確認
+
+```bash
+ls ~/Library/Application\ Support/com.yinxiang.Mac/accounts/app.yinxiang.com/
+```
+
+有看到數字 ID 資料夾，就代表資料庫存在，可以繼續設定。
+
+---
+
 ## 設定
 
 打開 `yinxiang_to_obsidian.py`，修改第 31-49 行的設定區域：

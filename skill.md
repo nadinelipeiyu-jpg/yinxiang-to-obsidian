@@ -4,9 +4,9 @@
 
 ## Step 1：確認腳本位置
 
-檢查以下位置是否有 `evernote_to_obsidian.py`：
-- `~/evernote_to_obsidian.py`
-- `~/evernote-to-obsidian/evernote_to_obsidian.py`
+檢查以下位置是否有 `yinxiang_to_obsidian.py`：
+- `~/yinxiang_to_obsidian.py`
+- `~/evernote-to-obsidian/yinxiang_to_obsidian.py`
 
 ## Step 2：確認相依套件
 
@@ -34,7 +34,7 @@ ls ~/Library/Application\ Support/com.yinxiang.Mac/accounts/app.yinxiang.com/
 ## Step 5：執行
 
 ```bash
-python3 ~/evernote_to_obsidian.py
+python3 ~/yinxiang_to_obsidian.py
 ```
 
 先 TEST_LIMIT=10 測試，確認後改 0 跑全部。
